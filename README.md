@@ -6,7 +6,10 @@ This repository uses to demo how to run automation test using [Selenium](https:/
 ***Note:*** *Before you run into this example, make sure you install [Docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/).*
 
 1. Run `docker-compose up` to install all neccessary resource.
-2. Go to `C:\Windows\System32\drivers\etc` and edit `host` file like this
+2. Go to `C:\Windows\System32\drivers\etc` and add a row to `host` file like this
+```
+[YOUR_IP_ADDRESS] testserver.local
+```
 3. Goes to `Automation.Test\Automation.Test.Sample Uses` directory and run dotnet command `dotnet test` to execute the test.
 
 # How to build your own test case?
